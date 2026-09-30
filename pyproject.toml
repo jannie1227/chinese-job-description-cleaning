@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chinese-job-description-cleaning"
+version = "0.1.0"
+description = "Public Chinese recruitment cleaning with documented local-only inputs"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+license = "MIT"
+authors = [{name = "jannie1227"}]
+
+[project.urls]
+Repository = "https://github.com/jannie1227/chinese-job-description-cleaning"
+
+[project.scripts]
+job-description-clean = "chinese_job_description_cleaning.cli:main"
+job-description-reproduce = "chinese_job_description_cleaning._frozen:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.setuptools.package-data]
+chinese_job_description_cleaning = ["engine_sources/**/*.py"]

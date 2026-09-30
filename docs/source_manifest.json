@@ -1,0 +1,27 @@
+{
+  "software_version": "0.1.0",
+  "research_rules": "R12 V7",
+  "semantic_modules": {
+    "jdclean_unified.responsibility_repair_r11": "7933d94f0c28c40bf57a1ff0c5af1e304ff74317a10cfe8220abbdd54d7962e3",
+    "tools.r11_engine": "ccc78232262a47e4653914228459f420cecbf6e5a1091157a3cb6fd9f0288213",
+    "tools.r11_headings_v4": "020f5c416dca01c994a24c6533fe6fef489b04e10b58155891552735ba2677e4",
+    "tools.r11_io": "6599080a0b6949c6c1ee83c4314e9bca204db67892ae3e8793d8ba5b427d78ac",
+    "tools.r11_policy_v2": "552745856c2a317348cfeef4c21bd91a199789e9f03b1d1449f7096627bc5172",
+    "tools.r11_policy_v3": "dae4bd90fb022f093d1926cf11bd52f9c698c39e27e0073b264ee241fff5da19",
+    "tools.r11_policy_v4": "eb875a26e8f31d65622f006987a840a98355416c6a9a4907bfa39bece084b7bc",
+    "tools.r11_policy_v5": "2fbd3088c4e58a82c6f6a8be3cd2416efbd612b296cefd7aee20f0c1c06d3a13",
+    "tools.r11_verify_release": "1799a6d1a9f8f062263660351765c8488fcb7fc33f30aa4d70c198ca1accb30a",
+    "tools.r12_policy": "a7f152c7f3d366b0ba4c6cb24d235e44e4864e4475615572bfd972867afcda2c",
+    "tools.r12_policy_v2": "380db6e2c14459d9b37c4038262e2b450ff0fced8313bab26260a269b1e94599",
+    "tools.r12_policy_v3": "e9f94516ac72b85e9ffbd43fa038dd01238146a5b90c3e4e41d3bb5fe08e1b63",
+    "tools.r12_policy_v4": "bdf279d3bcade6ddef27f996f202ced573f78a5c336c6f15f682afa58373cdba",
+    "tools.r12_policy_v5": "c36cfdfdb58687a6a7060f869c2170b30504fa76850ec2d607fe2b4cebc0fede",
+    "tools.r12_policy_v6": "c01349c381bfd8a1caaa90a9d1b315b20c6397259c960e6441dc52cc699c117d",
+    "tools.r12_policy_v7": "4c58e118de281da6d2bec1efff1c9e0f491dfeaa5dd114bd686e14a48031aff4"
+  },
+  "portability_changes": [
+    "Semantic modules extracted to packaged source files without text changes.",
+    "Resume fingerprint now includes all packaged source modules.",
+    "Private source adjudications remain external."
+  ]
+}

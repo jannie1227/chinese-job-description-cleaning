@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite this software and distinguish public rules from private research replication."
+title: "chinese-job-description-cleaning"
+type: software
+authors:
+  - name: "jannie1227"
+version: 0.1.0
+date-released: 2026-10-01
+repository-code: "https://github.com/jannie1227/chinese-job-description-cleaning"
+license: MIT

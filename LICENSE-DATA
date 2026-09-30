@@ -1,0 +1,24 @@
+License scope
+
+Python source code, including embedded rule implementations and
+metadata_rules/*.py, is licensed under the MIT License in LICENSE.
+
+Wholly artificial examples under examples/ and bundled data_rules/ tables and any separately authored rule
+tables added to this repository are licensed under Creative Commons
+Attribution 4.0 International (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+Provide attribution to "jannie1227 / Chinese Recruitment Cleaning", name and
+link CC BY 4.0, indicate changes, and retain the notices identifying artificial
+examples and their limitations.
+
+Original documentation is dual-licensed under MIT and CC BY 4.0; users may
+choose either license for documentation.
+
+These licenses do not apply to real or third-party recruitment data, private
+source adjudications, private unresolved-combination tables, or record-level
+research outputs. None of those materials are distributed by this repository.
+The software license grants no right to obtain or redistribute external data.
+
+This scope continues the original Chinese Job Title Cleaning project's
+MIT-for-code / CC-BY-for-artificial-materials licensing arrangement.
