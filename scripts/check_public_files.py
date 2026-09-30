@@ -21,13 +21,13 @@ def main():
             with path.open(encoding='utf-8-sig',newline='') as f:rows=list(csv.DictReader(f))
             id_name='example_id' if name.startswith('examples/') else 'record_id'
             if not all(r[id_name].startswith('SYNTH') for r in rows):errors.append(name+': non-synthetic ID')
-    manifest=json.loads((ROOT/'docs/source_manifest.json').read_text())
+    manifest=json.loads((ROOT/'docs/source_manifest.json').read_text(encoding='utf-8'))
     if 'semantic_modules' in manifest:
         pkg=ROOT/'src/chinese_job_description_cleaning'
         for name,h in manifest['semantic_modules'].items():
             path=pkg/'engine_sources'/Path(name.replace('.','/')+'.py')
             if hashlib.sha256(path.read_bytes()).hexdigest()!=h:errors.append(str(path.relative_to(ROOT))+': frozen rule changed')
-        tree=ast.parse((pkg/'_frozen.py').read_text())
+        tree=ast.parse((pkg/'_frozen.py').read_text(encoding='utf-8'))
         resources=next(ast.literal_eval(n.value) for n in tree.body if isinstance(n,ast.Assign) and any(isinstance(x,ast.Name) and x.id=='BUNDLED_RESOURCES' for x in n.targets))
         if resources!={'r10_reviews':[],'v5_reviews':[],'v7_reviews':[]}:errors.append('private source adjudications embedded')
     else:

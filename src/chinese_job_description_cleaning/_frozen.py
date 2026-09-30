@@ -242,6 +242,8 @@ def export(db,args,output,input_sha,code_sha,unique_count):
     return manifest
 
 def main(argv=None):
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
     parser=argparse.ArgumentParser(description='One-file frozen R12 V7 cleaning from the original recruitment CSV. No third-party packages or network required.')
     here=Path(__file__).resolve().parent
     parser.add_argument('--input',type=Path,default=here/'data/原始数据2.0版本.csv')

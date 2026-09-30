@@ -68,4 +68,4 @@ def main(argv=None):
     except (ValueError,TypeError,RuntimeError,OSError):
         # 只返回简明输入/运行错误；不把底层的原文断言打印到终端。
         parser.exit(2,'CSV cleaning failed; check columns, IDs, input types and the output path. No input text was logged.\n')
-    print(json.dumps(result,ensure_ascii=False))
+    print(json.dumps(result,ensure_ascii=True))
